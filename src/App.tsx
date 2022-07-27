@@ -18,7 +18,7 @@ const Main = styled.main`
 const HeaderDesc = styled.div`
 	display: flex;
 
-	margin: 2rem 2rem;
+	margin: 2rem 10rem;
 
 	> :first-child {
 		width: 60%;
@@ -89,7 +89,6 @@ const HeaderDesc = styled.div`
 				code {
 					white-space: pre-wrap;
 					color: white;
-					opacity: 1;
 					letter-spacing: 1px;
 				}
 
