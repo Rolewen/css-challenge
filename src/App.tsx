@@ -53,8 +53,8 @@ const HeaderDesc = styled.div`
 		padding: 1rem 1rem;
 		.panel {
 			background: #404040;
-			width: 360px;
-			height: 250px;
+			width: 390px;
+			height: 275px;
 			border-radius: 10px;
 			.header {
 				display: flex;
@@ -85,17 +85,49 @@ const HeaderDesc = styled.div`
 			.content {
 				display: flex;
 				margin-top: 1rem;
+				line-height: 1.8;
+				code {
+					white-space: pre-wrap;
+					color: white;
+					opacity: 1;
+					letter-spacing: 1px;
+				}
+
 				> :first-child {
+					margin-left: 1rem;
 					opacity: 0.5;
 					color: #c0c0c0;
-					word-break: break-all;
 					width: 18px;
 					text-align: right;
-					line-height: 1.5;
-					margin-left: 1rem;
 				}
 
 				> :last-child {
+					margin-left: 2rem;
+					width: calc(100% - 18px);
+				}
+
+				.green {
+					color: #a7e22e;
+				}
+
+				.red {
+					color: #f92572;
+				}
+
+				.purple {
+					color: #ae81ff;
+				}
+
+				.blue {
+					color: #65d9ef;
+				}
+
+				.space-2 {
+					margin-left: 2rem;
+				}
+
+				.space-4 {
+					margin-left: 4rem;
 				}
 			}
 		}
@@ -152,13 +184,64 @@ function App() {
 								<div className="circle border-green"></div>
 							</div>
 							<div className="content">
-								<div>1 2 3 4 5 6 7 8 9 10</div>
+								<div>{`
+									1
+									2
+									3
+									4
+									5
+									6
+									7
+									8
+									9
+									10
+								`}</div>
 								<code>
-									{`
-										for (let day=1; day<=100; day++){
-											
-										}
-									`}
+									<span className="red">for </span>
+									<span className="purple">(</span>
+									<span className="blue">let</span> day
+									<span className="red">=</span>1; day
+									<span className="red">{`<=`}</span>100; day
+									<span className="red">++</span>
+									<span className="purple">{`) {`}</span>
+									<br />
+									<span className="space-2 green">
+										getAnIdea
+									</span>
+									<span className="blue">()</span>;
+									<br />
+									<span className="space-2 green">
+										writeHTML
+									</span>
+									<span className="blue">()</span>;
+									<br />
+									<span className="space-2 green">
+										writeStyledComponent
+									</span>
+									<span className="blue">()</span>;
+									<br />
+									<span className="space-2 green">
+										beHappy
+									</span>
+									<span className="blue">()</span>;
+									<br />
+									<br />
+									<span className="space-2 red">if </span>
+									<span className="blue">(</span>
+									day
+									<span className="red">===</span>
+									<span className="purple">100</span>
+									<span className="blue">{`) {`}</span>
+									<br />
+									<span className="space-4 green">
+										celebrate
+									</span>
+									<span className="blue">()</span>;
+									<br />
+									<span className="space-2 blue">{`}`}</span>
+									<br />
+									<span className="purple">{`}`}</span>
+									<br />
 								</code>
 							</div>
 						</div>
