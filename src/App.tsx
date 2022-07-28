@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { ResetStyle, GlobalStyle } from "../src/components/globalStyle";
+import { Day01 } from "./components/day01";
 
 const colorGrey = css`
 	color: rgba(75, 85, 99, 1);
@@ -13,12 +14,21 @@ const Main = styled.main`
 	.text-blue {
 		${colorBlue}
 	}
+
+	.title {
+		${colorGrey}
+		font-weight: 700;
+		font-size: 16px;
+		text-align: center;
+		margin: 6rem 0 4rem 0;
+	}
+	margin-bottom: 50px;
 `;
 
 const HeaderDesc = styled.div`
 	display: flex;
-
-	margin: 2rem 10rem;
+	justify-content: center;
+	margin: 2rem 10vw;
 
 	> :first-child {
 		width: 60%;
@@ -51,9 +61,13 @@ const HeaderDesc = styled.div`
 	> :last-child {
 		width: 40%;
 		padding: 1rem 1rem;
+
+		@media (max-width: 500px) {
+			padding: 0;
+		}
 		.panel {
 			background: #404040;
-			width: 390px;
+			width: 360px;
 			height: 275px;
 			border-radius: 10px;
 			.header {
@@ -145,11 +159,25 @@ const HeaderDesc = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 500px) {
+		margin: 2rem 0;
+	}
+`;
+
+const Content = styled.div`
+	margin: 2rem 10vw;
+	display: flex;
+	flex-wrap: wrap;
+
+	@media (max-width: 500px) {
+		margin: 2rem 0;
+	}
 `;
 
 function App() {
 	return (
-		<div>
+		<>
 			<ResetStyle />
 			<GlobalStyle />
 			<Main>
@@ -246,8 +274,12 @@ function App() {
 						</div>
 					</div>
 				</HeaderDesc>
+				<p className="title">My 100 days css challenge</p>
+				<Content>
+					<Day01 />
+				</Content>
 			</Main>
-		</div>
+		</>
 	);
 }
 
