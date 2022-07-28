@@ -20,7 +20,7 @@ const Main = styled.main`
 		font-weight: 700;
 		font-size: 16px;
 		text-align: center;
-		margin: 6rem 0 4rem 0;
+		margin-top: 6rem;
 	}
 	margin-bottom: 50px;
 `;
