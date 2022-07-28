@@ -1,20 +1,8 @@
 import styled from "styled-components";
+import { Wrapper, Content as SharedContent } from "../share-styled";
 
-const Wrapper = styled.div`
-	min-width: 50%;
-	text-align: center;
-
-	@media (max-width: 768px) {
-		min-width: 100%;
-	}
-`;
-
-const Content = styled.div`
-	height: 360px;
-	width: 360px;
+const Content = styled(SharedContent)`
 	background: linear-gradient(45deg, #43389f, #4ec6ca);
-	margin: 0 auto;
-	border-radius: 8px;
 
 	> div {
 		position: relative;

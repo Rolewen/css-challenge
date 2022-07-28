@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { ResetStyle, GlobalStyle } from "../src/components/globalStyle";
-import { Day01 } from "./components/day01";
+import Content from "./components";
 
 const colorGrey = css`
 	color: rgba(75, 85, 99, 1);
@@ -165,16 +165,6 @@ const HeaderDesc = styled.div`
 	}
 `;
 
-const Content = styled.div`
-	margin: 2rem 10vw;
-	display: flex;
-	flex-wrap: wrap;
-
-	@media (max-width: 500px) {
-		margin: 2rem 0;
-	}
-`;
-
 function App() {
 	return (
 		<>
@@ -275,9 +265,7 @@ function App() {
 					</div>
 				</HeaderDesc>
 				<p className="title">My 100 days css challenge</p>
-				<Content>
-					<Day01 />
-				</Content>
+				<Content />
 			</Main>
 		</>
 	);
