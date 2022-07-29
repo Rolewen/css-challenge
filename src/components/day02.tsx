@@ -121,6 +121,12 @@ const Content = styled(SharedContent)`
 			animation: ${line3Rev} 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
 		}
 
+		&.no-animation {
+			> div {
+				animation: none;
+			}
+		}
+
 		&.active {
 			> :first-child {
 				animation: ${line1} 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
@@ -138,13 +144,21 @@ const Content = styled(SharedContent)`
 `;
 
 export const Day02 = () => {
-	const [state, setState] = useState(false);
+	const [state, setState] = useState<"no-animation" | "active" | "">(
+		"no-animation"
+	);
 	return (
 		<Wrapper>
 			<Content>
 				<div
-					className={`center${state ? " active" : ""}`}
-					onClick={() => setState(prev => !prev)}>
+					className={`center ${state}`}
+					onClick={() =>
+						setState(prev =>
+							prev === "no-animation" || prev === ""
+								? "active"
+								: ""
+						)
+					}>
 					<div />
 					<div />
 					<div />
