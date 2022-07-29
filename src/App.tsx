@@ -154,7 +154,7 @@ const HeaderDesc = styled.div`
 		}
 
 		> :first-child {
-			padding: 1rem 0;
+			padding: 1rem 5vw;
 		}
 
 		> :last-child {
