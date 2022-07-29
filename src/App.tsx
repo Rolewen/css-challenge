@@ -28,11 +28,11 @@ const Main = styled.main`
 const HeaderDesc = styled.div`
 	display: flex;
 	justify-content: center;
-	margin: 2rem 10vw;
+	margin: 2rem 8vw;
 
 	> :first-child {
 		width: 60%;
-		padding: 1rem 2rem;
+		padding: 1rem 2rem 1rem 0;
 		h1 {
 			display: grid;
 			span {
@@ -146,11 +146,15 @@ const HeaderDesc = styled.div`
 		}
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 910px) {
 		display: block;
 		> :first-child,
 		> :last-child {
 			width: 100%;
+		}
+
+		> :first-child {
+			padding: 1rem 0;
 		}
 
 		> :last-child {
