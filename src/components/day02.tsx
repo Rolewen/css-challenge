@@ -87,8 +87,15 @@ const line3Rev = keyframes`
 `;
 
 const Content = styled(SharedContent)`
-	background: #3faf82;
-	position: relative;
+	> div:first-child {
+		background: #3faf82;
+		position: relative;
+		height: 360px;
+		width: 360px;
+		margin: 0 auto;
+		border-radius: 8px;
+		box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);
+	}
 
 	.center {
 		top: 50%;
@@ -150,18 +157,23 @@ export const Day02 = () => {
 	return (
 		<Wrapper>
 			<Content>
-				<div
-					className={`center ${state}`}
-					onClick={() =>
-						setState(prev =>
-							prev === "no-animation" || prev === ""
-								? "active"
-								: ""
-						)
-					}>
-					<div />
-					<div />
-					<div />
+				<div>
+					<div
+						className={`center ${state}`}
+						onClick={() =>
+							setState(prev =>
+								prev === "no-animation" || prev === ""
+									? "active"
+									: ""
+							)
+						}>
+						<div />
+						<div />
+						<div />
+					</div>
+				</div>
+				<div className="desc">
+					<h3>Day 002</h3>
 				</div>
 			</Content>
 		</Wrapper>
