@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Wrapper, Content as SharedContent } from "../share-styled";
-import "../css/Open+Sans:600,300.css";
+import { Wrapper, Content as SharedContent } from "../../share-styled";
+import "./fonts/Open+Sans:600,300.css";
+import Cat from "./img/cat.jpg";
 
 const brown = "#786450";
 
@@ -83,17 +84,17 @@ const Content = styled(SharedContent)`
 		.avator + span {
 			font-size: 18px;
 			font-weight: 600;
-			margin-top: 20px;
+			margin-top: 12px;
 		}
 
 		.avator + span + span {
 			font-size: 11px;
-			line-height: 18px;
+			line-height: 26px;
 		}
 
 		.btn-group {
 			position: relative;
-			margin-top: 30px;
+			margin-top: 24px;
 			button {
 				cursor: pointer;
 				margin: 12px auto;
@@ -166,14 +167,14 @@ export const Day03 = () => {
 							<div className="circle first" />
 							<div className="circle second" />
 							<img
-								src="https://100dayscss.com/codepen/jessica-potter.jpg"
+								src={Cat}
 								width="70px"
 								height="70px"
-								alt="Jessica Potter"
+								alt="Hugo the cat"
 							/>
 						</div>
-						<span>Jessica Potter</span>
-						<span>Visual Artist</span>
+						<span>Hugo Mak</span>
+						<span>British Shorthair</span>
 						<div className="btn-group">
 							<button>Follow</button>
 							<button>Message</button>
