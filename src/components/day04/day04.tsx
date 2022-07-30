@@ -71,38 +71,42 @@ const Content = styled(SharedContent)`
 			background: #5f98cd;
 
 			.nav-btn {
+				height: 60px;
+				width: 60px;
 				position: absolute;
 				cursor: pointer;
+				.icon {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
 
-				top: 50%;
-				left: 5%;
-				transform: translate(0, -50%);
-
-				> :first-child {
-					display: flex;
 					> :first-child {
-						width: 20px;
+						display: flex;
+						> :first-child {
+							width: 20px;
+							height: 3px;
+							background: #b2daff;
+							border-radius: 3px;
+							margin: auto;
+						}
+
+						> :nth-child(2) {
+							width: 7px;
+							height: 7px;
+							background: #b2daff;
+							border-radius: 50%;
+							margin-left: 2px;
+						}
+					}
+
+					> :last-child {
+						width: 28px;
 						height: 3px;
 						background: #b2daff;
 						border-radius: 3px;
-						margin: auto;
+						margin-top: 5px;
 					}
-
-					> :nth-child(2) {
-						width: 7px;
-						height: 7px;
-						background: #b2daff;
-						border-radius: 50%;
-						margin-left: 2px;
-					}
-				}
-
-				> :last-child {
-					width: 28px;
-					height: 3px;
-					background: #b2daff;
-					border-radius: 3px;
-					margin-top: 5px;
 				}
 			}
 
@@ -182,7 +186,7 @@ const Content = styled(SharedContent)`
 				span,
 				p {
 					color: #666666;
-					margin-left: 20px;
+					margin: 0 5px 0 20px;
 				}
 
 				.circle {
@@ -265,11 +269,13 @@ export const Day04 = () => {
 						<div
 							className="nav-btn"
 							onClick={() => setState(prev => !prev)}>
-							<div>
-								<div />
-								<div />
+							<div className="icon">
+								<div>
+									<div />
+									<div />
+								</div>
+								<div className="line" />
 							</div>
-							<div className="line" />
 						</div>
 						<span className="title">Notifications</span>
 						<button
