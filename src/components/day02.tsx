@@ -172,10 +172,10 @@ export const Day02 = () => {
 						<div />
 					</div>
 				</div>
-				<div className="desc">
-					<h3>Day 002</h3>
-				</div>
 			</Content>
+			<div className="desc">
+				<h3>Day 002</h3>
+			</div>
 		</Wrapper>
 	);
 };

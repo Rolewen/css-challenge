@@ -96,10 +96,10 @@ export const Day01 = () => {
 					<span className="big">Days</span>
 					<span className="small">CSS Challenge</span>
 				</div>
-				<div className="desc">
-					<h3>Day 001</h3>
-				</div>
 			</Content>
+			<div className="desc">
+				<h3>Day 001</h3>
+			</div>
 		</Wrapper>
 	);
 };
