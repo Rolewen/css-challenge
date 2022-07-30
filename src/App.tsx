@@ -15,9 +15,12 @@ const Main = styled.main`
 		${colorBlue}
 	}
 
+	.bold {
+		font-weight: 700;
+	}
+
 	> .title {
 		${colorGrey}
-		font-weight: 700;
 		font-size: 16px;
 		text-align: center;
 		margin-top: 6rem;
@@ -35,9 +38,6 @@ const HeaderDesc = styled.div`
 		padding: 1rem 2rem 1rem 0;
 		h1 {
 			display: grid;
-			span {
-				font-weight: 600;
-			}
 			> span:first-child {
 				${colorGrey}
 				line-height: 1.8;
@@ -187,7 +187,7 @@ function App() {
 					<div>
 						<h1>
 							<span>100 Days CSS Challenge</span>
-							<span>
+							<span className="bold">
 								What is <span className="text-blue">this?</span>
 							</span>
 						</h1>
@@ -196,7 +196,8 @@ function App() {
 							snippets as a creative learning process for myself.
 						</p>
 						<p>
-							I used <span className="text-blue">VSCode</span> to
+							I used{" "}
+							<span className="text-blue bold">VSCode</span> to
 							write and save my code every day on this website.
 						</p>
 						<p>
