@@ -15,7 +15,7 @@ const Main = styled.main`
 		${colorBlue}
 	}
 
-	.title {
+	> .title {
 		${colorGrey}
 		font-weight: 700;
 		font-size: 16px;
