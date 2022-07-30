@@ -56,6 +56,10 @@ const HeaderDesc = styled.div`
 			margin: 1.5rem 0;
 			font-size: 16px;
 		}
+
+		@media (min-width: 1200px) {
+			max-width: 600px;
+		}
 	}
 
 	> :last-child {
@@ -64,6 +68,10 @@ const HeaderDesc = styled.div`
 
 		@media (max-width: 500px) {
 			padding: 0;
+		}
+
+		@media (min-width: 1200px) {
+			max-width: 400px;
 		}
 		.panel {
 			background: #404040;
