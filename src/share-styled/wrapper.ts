@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 			text-align: center;
 			margin-top: 1.5rem;
 			font-size: 16px;
+			color: rgba(75, 85, 99, 1);
 		}
 	}
 `;
