@@ -3,6 +3,7 @@ import { Day01 } from "./day01";
 import { Day02 } from "./day02";
 import { Day03 } from "./day03";
 import { Day04 } from "./day04";
+import { Day05 } from "./day05";
 
 const Content = styled.div`
 	margin: 3rem 0;
@@ -28,6 +29,7 @@ export default () => (
 			<Day02 />
 			<Day03 />
 			<Day04 />
+			<Day05 />
 		</div>
 	</Content>
 );
