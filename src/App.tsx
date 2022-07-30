@@ -277,7 +277,7 @@ function App() {
 						</div>
 					</div>
 				</HeaderDesc>
-				<p className="title">My 100 days css challenge</p>
+				<p className="title bold">My 100 days css challenge</p>
 				<Content />
 			</Main>
 		</>
