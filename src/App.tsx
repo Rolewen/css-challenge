@@ -192,18 +192,18 @@ function App() {
 							</span>
 						</h1>
 						<p>
-							For 100 consecutive days, I've written HTML and CSS
-							snippets as a creative learning process for myself.
+							For 100 consecutive days, I plan to write HTML and
+							Styled-Component snippets as a creative learning
+							process for myself.
 						</p>
 						<p>
-							I used{" "}
+							I'll use{" "}
 							<span className="text-blue bold">VSCode</span> to
-							write and save my code every day on this website.
+							write and save my code every day on this project.
 						</p>
 						<p>
-							After accomplishing my project on day 100, I've
-							rewritten the website to let everyone else also join
-							my challenge.
+							The project which I created it's to let everyone
+							else can see and also join my challenge.
 						</p>
 					</div>
 					<div>
