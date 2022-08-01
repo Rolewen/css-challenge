@@ -75,7 +75,7 @@ const HeaderDesc = styled.div`
 		}
 		.panel {
 			background: #404040;
-			width: 360px;
+			width: 370px;
 			height: 275px;
 			border-radius: 10px;
 			.header {
@@ -186,15 +186,14 @@ function App() {
 				<HeaderDesc>
 					<div>
 						<h1>
-							<span>100 Days CSS Challenge</span>
+							<span>Challenge 100</span>
 							<span className="bold">
 								What is <span className="text-blue">this?</span>
 							</span>
 						</h1>
 						<p>
-							For 100 consecutive days, I plan to write HTML and
-							Styled-Component snippets as a creative learning
-							process for myself.
+							I plan to write HTML and Styled-Component snippets
+							as a creative learning process for myself.
 						</p>
 						<p>
 							I'll use{" "}
@@ -202,8 +201,13 @@ function App() {
 							write and save my code every day on this project.
 						</p>
 						<p>
-							The project which I created it's to let everyone
-							else can see and also join my challenge.
+							All idea comes from{" "}
+							<a
+								className="text-blue bold"
+								href="https://100dayscss.com">
+								100 DAYS CSS Challenge
+							</a>
+							.
 						</p>
 					</div>
 					<div>
@@ -229,14 +233,14 @@ function App() {
 								<code>
 									<span className="red">for </span>
 									<span className="purple">(</span>
-									<span className="blue">let</span> day
-									<span className="red">=</span>1; day
-									<span className="red">{`<=`}</span>100; day
+									<span className="blue">let</span> work
+									<span className="red">=</span>1; work
+									<span className="red">{`<=`}</span>100; work
 									<span className="red">++</span>
 									<span className="purple">{`) {`}</span>
 									<br />
 									<span className="space-2 green">
-										getAnIdea
+										findAnIdea
 									</span>
 									<span className="blue">()</span>;
 									<br />
@@ -258,7 +262,7 @@ function App() {
 									<br />
 									<span className="space-2 red">if </span>
 									<span className="blue">(</span>
-									day
+									work
 									<span className="red">===</span>
 									<span className="purple">100</span>
 									<span className="blue">{`) {`}</span>
