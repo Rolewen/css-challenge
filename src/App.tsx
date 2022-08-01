@@ -192,8 +192,11 @@ function App() {
 							</span>
 						</h1>
 						<p>
-							I plan to write HTML and Styled-Component snippets
-							as a creative learning process for myself.
+							I plan to write HTML and{" "}
+							<span className="text-blue bold">
+								Styled-Component
+							</span>{" "}
+							snippets as a creative learning process for myself.
 						</p>
 						<p>
 							I'll use{" "}
@@ -201,7 +204,7 @@ function App() {
 							write and save my code every day on this project.
 						</p>
 						<p>
-							All idea comes from{" "}
+							Currently, all ideas come from{" "}
 							<a
 								className="text-blue bold"
 								href="https://100dayscss.com">
@@ -281,7 +284,7 @@ function App() {
 						</div>
 					</div>
 				</HeaderDesc>
-				<p className="title bold">My 100 days css challenge</p>
+				<p className="title bold">My 100 challenge</p>
 				<Content />
 			</Main>
 		</>
