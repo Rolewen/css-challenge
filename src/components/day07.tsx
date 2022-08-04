@@ -34,6 +34,7 @@ const Content = styled(SharedContent)`
 		height: 45px;
 		overflow: hidden;
 		font-size: 30px;
+		font-weight: 700;
 		text-shadow: 3px 3px 3px rgb(0 0 0 / 30%);
 
 		ul {
