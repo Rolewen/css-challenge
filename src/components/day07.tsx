@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { Wrapper, Content as SharedContent } from "../share-styled";
 
